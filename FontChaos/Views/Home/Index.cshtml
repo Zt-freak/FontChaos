@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Font Chaos";
+}
+
+<form action="/" method="post">
+    <input type="text" name="text" />
+    <input type="submit">
+</form>
+<div>
+    @if (ViewBag.ChaosText != null)
+    {
+        @Html.Raw(ViewBag.ChaosText)
+    }
+    </div>
